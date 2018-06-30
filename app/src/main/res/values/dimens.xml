@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="listview_dividerHeight">0dp</dimen>
+    <dimen name="LL1_paddingEnd">20dp</dimen>
+    <dimen name="LL1_paddingLeft">16dp</dimen>
+    <dimen name="LL1_paddingRight">16dp</dimen>
+    <dimen name="LL1_paddingStart">16dp</dimen>
+    <dimen name="LL2_width">0dp</dimen>
+    <dimen name="LL2_marginLeft">5dp</dimen>
+    <dimen name="LL2_marginStart">5dp</dimen>
+    <dimen name="TV_textSize">16sp</dimen>
+    <dimen name="LL3_marginLeft">16dp</dimen>
+    <dimen name="LL3_marginStart">16dp</dimen>
+    <dimen name="TV2_textSize">12sp</dimen>
+</resources>
