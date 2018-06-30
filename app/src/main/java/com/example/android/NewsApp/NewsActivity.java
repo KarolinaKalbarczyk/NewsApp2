@@ -43,8 +43,8 @@ public class NewsActivity extends AppCompatActivity
 
     String apiKey = com.example.android.NewsApp.BuildConfig.ApiKey;;
 
-    private static final String FOOTBALL_REQUEST_URL = "https://content.guardianapis.com/search?q=europe&show-tags=contributor"; //"https://content.guardianapis.com/search?&show-tags=contributor&section=football";
-    private final String GUARDIAN_REQUEST_URL = FOOTBALL_REQUEST_URL + "&api-key=" + apiKey;
+    private static final String NEWS_REQUEST_URL = "https://content.guardianapis.com/search?q=europe&show-tags=contributor"; //"https://content.guardianapis.com/search?&show-tags=contributor&section=football";
+    private final String GUARDIAN_REQUEST_URL = NEWS_REQUEST_URL + "&api-key=" + apiKey;
 
 
     /**
@@ -164,21 +164,22 @@ public class NewsActivity extends AppCompatActivity
                 getString(R.string.settings_section_default));
 
         // parse breaks apart the URI string that's passed into its parameter
-        Uri baseUri = Uri.parse(GUARDIAN_REQUEST_URL);
+        Uri baseUri = Uri.parse(NEWS_REQUEST_URL);
 
         // buildUpon prepares the baseUri that we just parsed so we can add query parameters to it
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
         // Append query parameter and its value. For example, the `format=geojson`
-        uriBuilder.appendQueryParameter("format", "geojson");
+        uriBuilder.appendQueryParameter("api-key", apiKey);
         uriBuilder.appendQueryParameter("limit", "10");
         uriBuilder.appendQueryParameter("section", section);
-        uriBuilder.appendQueryParameter("orderby", orderBy);
+        uriBuilder.appendQueryParameter("orderBy", orderBy);
+        uriBuilder.appendQueryParameter("section", section.toLowerCase());
 
-        // Return the completed uri `http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=10&minmag=minMagnitude&orderby=time
-//        return new NewsLoader(this, uriBuilder.toString());
+        // Return the completed uri
+        return new NewsLoader(this, uriBuilder.toString());
 
-        return new NewsLoader(this, GUARDIAN_REQUEST_URL);
+//        return new NewsLoader(this, GUARDIAN_REQUEST_URL);
          //Append query parameter and its value.
     }
 

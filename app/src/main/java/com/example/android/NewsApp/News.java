@@ -75,4 +75,9 @@ public class News {
     public String getAuthor(){return mAuthor;}
 
     public String getSection(){return mSection;}
+
+    @Override
+    public String toString() {
+        return mWebTitle + " " + mAuthor + "" + mWebPublicationDate + " " + mSection +" " + mWebUrl;
+    }
 }

@@ -13,6 +13,7 @@
     <EditTextPreference
         android:defaultValue="@string/settings_section_default"
         android:inputType="text"
+        android:singleLine="true"
         android:key="@string/settings_section_key"
         android:selectAllOnFocus="true"
         android:title="@string/settings_section_label" />
