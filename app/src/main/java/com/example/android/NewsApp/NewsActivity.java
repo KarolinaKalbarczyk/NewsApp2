@@ -46,7 +46,6 @@ public class NewsActivity extends AppCompatActivity
     private static final String NEWS_REQUEST_URL = "https://content.guardianapis.com/search?q=europe&show-tags=contributor"; //"https://content.guardianapis.com/search?&show-tags=contributor&section=football";
     private final String GUARDIAN_REQUEST_URL = NEWS_REQUEST_URL + "&api-key=" + apiKey;
 
-
     /**
      * Constant value for the article loader ID. We can choose any integer.
      * This really only comes into play if you're using multiple loaders.
@@ -178,9 +177,6 @@ public class NewsActivity extends AppCompatActivity
 
         // Return the completed uri
         return new NewsLoader(this, uriBuilder.toString());
-
-//        return new NewsLoader(this, GUARDIAN_REQUEST_URL);
-         //Append query parameter and its value.
     }
 
     @Override

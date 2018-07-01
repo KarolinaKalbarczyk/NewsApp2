@@ -13,59 +13,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!-- Layout for a single list item that displays an news -->
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="?android:attr/listPreferredItemHeight"-->
-    <!--android:orientation="horizontal"-->
-    <!--android:paddingEnd="@dimen/LL1_paddingEnd"-->
-    <!--android:paddingLeft="@dimen/LL1_paddingLeft"-->
-    <!--android:paddingRight="@dimen/LL1_paddingRight"-->
-    <!--android:paddingStart="@dimen/LL1_paddingStart">-->
-
-
-    <!--<LinearLayout-->
-        <!--android:layout_width="@dimen/LL2_width"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="center_vertical"-->
-        <!--android:layout_marginLeft="@dimen/LL2_marginLeft"-->
-        <!--android:layout_marginStart="@dimen/LL2_marginStart"-->
-        <!--android:layout_weight="1"-->
-        <!--android:orientation="vertical">-->
-
-        <!--<TextView-->
-            <!--android:id="@+id/title"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:ellipsize="end"-->
-            <!--android:maxLines="2"-->
-            <!--android:textStyle="bold"-->
-            <!--android:textColor="@color/textColorNewsLocation"-->
-            <!--android:textSize="@dimen/TV_textSize"-->
-            <!--tools:text="Long placeholder location that should wrap to more than 2 lines of text" />-->
-
-    <!--</LinearLayout>-->
-
-    <!--<LinearLayout-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="center_vertical"-->
-        <!--android:layout_marginLeft="@dimen/LL3_marginLeft"-->
-        <!--android:layout_marginStart="@dimen/LL3_marginStart"-->
-        <!--android:orientation="vertical">-->
-
-        <!--<TextView-->
-            <!--android:id="@+id/date"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="end"-->
-            <!--android:textColor="@color/textColorNewsDetails"-->
-            <!--android:textSize="@dimen/TV2_textSize"-->
-            <!--tools:text="Mar 6, 2010" />-->
-
-    <!--</LinearLayout>-->
-<!--</LinearLayout>-->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"

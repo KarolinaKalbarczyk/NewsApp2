@@ -235,9 +235,6 @@ public final class QueryUtils {
                 allNews.add(news);
             }
 
-
-
-
         } catch (JSONException e) {
             // If an error is thrown when executing any of the above statements in the "try" block,
             // catch the exception here, so the app doesn't crash. Print a log message
@@ -248,6 +245,4 @@ public final class QueryUtils {
         // Return the list of allNews
         return allNews;
     }
-
 }
-
